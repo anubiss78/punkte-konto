@@ -1,0 +1,704 @@
+{
+ "amex-platinum": {
+  "type": "privat",
+  "name": "American Express Platinum Card",
+  "short": "Amex Platinum",
+  "issuer": "American Express",
+  "programs": [
+   "amex-membership-rewards",
+   "hilton-honors",
+   "marriott-bonvoy",
+   "accor-all"
+  ],
+  "fee": "720 € pro Jahr",
+  "updated": "2026-11-26",
+  "url": "https://www.americanexpress.com/de-de/amexcited/cards/amex-karten-vergleich-12390",
+  "source": "americanexpress.com",
+  "note": "Angaben ohne Gewähr, verbindlich sind die aktuellen Bedingungen von American Express.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "60 € pro Monat (720 € im Jahr)",
+     "Fremdwährungsgebühr 2 %",
+     "Bargeld 4 %, mindestens 5 €",
+     "1 Platinum- und bis zu 4 Gold- oder Amex-Zusatzkarten inklusive"
+    ]
+   },
+   {
+    "h": "Punkte sammeln",
+    "items": [
+     "1 Membership Rewards Punkt pro Euro",
+     "Mit Punkteturbo (15 €/Jahr) 1,5 Punkte pro Euro",
+     "Willkommensbonus bis zu 85.000 Punkte",
+     "Punkte verfallen nicht, solange die Karte besteht"
+    ]
+   },
+   {
+    "h": "Jährliche Guthaben (rund 650 €)",
+    "items": [
+     "200 € Reiseguthaben über Amex Travel (ab 200 € Buchungswert)",
+     "150 € Restaurantguthaben bei Partnerrestaurants",
+     "200 € SIXT ride (8 × 25 €, Chauffeurdienst)",
+     "100 € LODENFREY (2 × 50 €)"
+    ]
+   },
+   {
+    "h": "Lounges",
+    "items": [
+     "Priority Pass mit 50 Besuchen pro Jahr (Gäste zählen mit)",
+     "Centurion Lounges unbegrenzt plus 1 Gast",
+     "Lufthansa-Lounge-Zugang über die Karte endete am 30.09.2026"
+    ]
+   },
+   {
+    "h": "Status",
+    "items": [
+     "Hilton Honors Gold",
+     "Marriott Bonvoy Gold Elite",
+     "ALL Accor Gold, Meliá Gold, Radisson Premium, GHA Discovery Platinum",
+     "Fine Hotels + Resorts",
+     "Mietwagen: SIXT Platinum, Avis Preferred Plus, Hertz Five Star"
+    ]
+   },
+   {
+    "h": "Versicherungen",
+    "items": [
+     "Reiserücktritt und -abbruch (bis 6.000 € pro Person, 10 % Selbstbehalt)",
+     "Auslandsreisekranken (Reisen bis 120 Tage)",
+     "Mietwagen-Vollkasko bis 75.000 €",
+     "Reisegepäck bis 3.000 €, Reisehaftpflicht, Reiseunfall",
+     "Privathaftpflicht und Rechtsschutz, Europa-Pannenhilfe, Käuferschutz",
+     "Meist nur, wenn die Leistung mit der Karte bezahlt wurde"
+    ]
+   }
+  ]
+ },
+ "amex-gold": {
+  "type": "privat",
+  "name": "American Express Gold Card",
+  "short": "Amex Gold",
+  "issuer": "American Express",
+  "programs": [
+   "amex-membership-rewards"
+  ],
+  "fee": "240 € pro Jahr",
+  "updated": "2026-11-26",
+  "url": "https://www.americanexpress.com/de-de/amexcited/cards/amex-karten-vergleich-12390",
+  "source": "americanexpress.com",
+  "note": "Angaben ohne Gewähr, verbindlich sind die aktuellen Bedingungen von American Express.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "20 € pro Monat (240 € im Jahr)",
+     "1 Gold-Zusatzkarte inklusive"
+    ]
+   },
+   {
+    "h": "Punkte sammeln",
+    "items": [
+     "1 Membership Rewards Punkt pro Euro",
+     "Mit Punkteturbo 1,5 Punkte pro Euro",
+     "Willkommensbonus bis zu 50.000 Punkte"
+    ]
+   },
+   {
+    "h": "Jährliche Guthaben",
+    "items": [
+     "60 € FREENOW Taxi",
+     "50 € SIXT rent",
+     "Bis zu 240 € SIXT+ Auto-Abo",
+     "Shopping-Guthaben (Amex nennt 80 € bzw. 100 €)"
+    ]
+   },
+   {
+    "h": "Lounges und Status",
+    "items": [
+     "Priority Pass bis zu 35 % günstiger (nicht inklusive)",
+     "The Hotel Collection, GHA Discovery Gold",
+     "SIXT Gold, Avis Preferred, Hertz Gold Plus Rewards"
+    ]
+   },
+   {
+    "h": "Versicherungen",
+    "items": [
+     "Reiserücktritt",
+     "Auslandsreisekranken",
+     "Reisekomfort (Verspätungen)",
+     "Verkehrsmittel-Unfall, Europa-Pannenhilfe",
+     "Käuferschutz"
+    ]
+   }
+  ]
+ },
+ "amex-green": {
+  "type": "privat",
+  "name": "American Express Card (Green)",
+  "short": "Amex Green",
+  "issuer": "American Express",
+  "programs": [
+   "amex-membership-rewards"
+  ],
+  "fee": "60 € im 1. Jahr",
+  "updated": "2026-11-26",
+  "url": "https://www.americanexpress.com/de-de/amexcited/cards/amex-karten-vergleich-12390",
+  "source": "americanexpress.com",
+  "note": "Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "5 € pro Monat im ersten Jahr",
+     "Danach kostenlos ab 9.000 € Jahresumsatz",
+     "1 Zusatzkarte inklusive"
+    ]
+   },
+   {
+    "h": "Punkte sammeln",
+    "items": [
+     "1 Membership Rewards Punkt pro Euro",
+     "Willkommensbonus bis zu 10.000 Punkte (ab 2.000 € Umsatz in 6 Monaten)"
+    ]
+   },
+   {
+    "h": "Versicherungen",
+    "items": [
+     "Reisekomfort (Verspätungen)",
+     "Verkehrsmittel-Unfall",
+     "Käuferschutz"
+    ]
+   }
+  ]
+ },
+ "amex-blue": {
+  "type": "privat",
+  "name": "American Express Blue Card",
+  "short": "Amex Blue",
+  "issuer": "American Express",
+  "programs": [
+   "amex-membership-rewards"
+  ],
+  "fee": "kostenlos",
+  "updated": "2026-11-26",
+  "url": "https://www.americanexpress.com/de-de/amexcited/cards/amex-karten-vergleich-12390",
+  "source": "americanexpress.com",
+  "note": "Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "Keine Jahresgebühr",
+     "Membership Rewards gegen Aufpreis (30 € pro Jahr)"
+    ]
+   },
+   {
+    "h": "Punkte sammeln",
+    "items": [
+     "1 Punkt pro Euro, nur mit gebuchtem Membership Rewards",
+     "25 € Startguthaben"
+    ]
+   },
+   {
+    "h": "Lounges und Versicherungen",
+    "items": [
+     "Priority Pass bis zu 35 % günstiger",
+     "Verkehrsmittel-Unfallversicherung"
+    ]
+   }
+  ]
+ },
+ "amex-business-platinum": {
+  "type": "business",
+  "name": "American Express Business Platinum Card",
+  "short": "Amex Business Platinum",
+  "issuer": "American Express",
+  "programs": [
+   "amex-membership-rewards",
+   "hilton-honors",
+   "marriott-bonvoy"
+  ],
+  "fee": "850 € pro Jahr",
+  "updated": "2026-11-26",
+  "url": "https://meilenoptimieren.com/unterschiede-american-express-business-gold-platinum-kreditkarte/",
+  "source": "meilenoptimieren.com",
+  "note": "Angaben ohne Gewähr, verbindlich sind die aktuellen Bedingungen von American Express.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "850 € pro Jahr",
+     "1 Platinum- und bis zu 98 Gold-Zusatzkarten inklusive",
+     "Dazu private Platinum Plus Karte (Metall)"
+    ]
+   },
+   {
+    "h": "Punkte sammeln",
+    "items": [
+     "1 Membership Rewards Punkt pro Euro, mit Punkteturbo 1,5",
+     "Willkommensbonus 200.000 Punkte ab 15.000 € Umsatz in 6 Monaten"
+    ]
+   },
+   {
+    "h": "Jährliche Guthaben (rund 1.400 €)",
+    "items": [
+     "200 € Online-Reiseguthaben",
+     "200 € SIXT ride",
+     "Bis zu 300 € SIXT+ Auto-Abo",
+     "200 € Dell, 300 € ebuero, 300 € Office Club"
+    ]
+   },
+   {
+    "h": "Lounges",
+    "items": [
+     "Priority Pass (bis zu 50 Besuche pro Jahr), zusätzlicher Priority Pass mit der Platinum Plus Karte",
+     "Centurion, Delta Sky Club, Escape und Plaza Premium Lounges",
+     "120 € Lounge-on-the-Go in Frankfurt und München"
+    ]
+   },
+   {
+    "h": "Status",
+    "items": [
+     "Hilton Honors Gold",
+     "Marriott Bonvoy Gold",
+     "Radisson Premium, Meliá Gold",
+     "SIXT Platinum, Hertz Five Star, Avis President's Club"
+    ]
+   },
+   {
+    "h": "Versicherungen",
+    "items": [
+     "Reiserücktritt und -abbruch, Reisegepäck, Reise-Unfall",
+     "Auslandsreisekranken",
+     "Mietwagen-Vollkasko und Zusatzhaftpflicht, Kfz-Schutzbrief",
+     "Privathaftpflicht und Prozesskosten, Reisekomfort"
+    ]
+   }
+  ]
+ },
+ "amex-business-gold": {
+  "type": "business",
+  "name": "American Express Business Gold Card",
+  "short": "Amex Business Gold",
+  "issuer": "American Express",
+  "programs": [
+   "amex-membership-rewards"
+  ],
+  "fee": "175 €, 1. Jahr frei",
+  "updated": "2026-11-26",
+  "url": "https://meilenoptimieren.com/unterschiede-american-express-business-gold-platinum-kreditkarte/",
+  "source": "meilenoptimieren.com",
+  "note": "Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "175 € pro Jahr, im ersten Jahr kostenlos",
+     "Bis zu 99 Zusatzkarten inklusive"
+    ]
+   },
+   {
+    "h": "Punkte sammeln",
+    "items": [
+     "1 Membership Rewards Punkt pro Euro, mit Punkteturbo 1,5",
+     "Willkommensbonus 50.000 Punkte ab 10.000 € Umsatz in 6 Monaten"
+    ]
+   },
+   {
+    "h": "Guthaben und Lounges",
+    "items": [
+     "100 € Dell-Guthaben",
+     "Priority Pass bis zu 35 % günstiger (nicht inklusive)"
+    ]
+   },
+   {
+    "h": "Versicherungen",
+    "items": [
+     "Auslandsreisekranken",
+     "Reisekomfort (Verspätungen)",
+     "Mietwagen-Vollkasko, Kfz-Schutzbrief",
+     "Verkehrsmittel-Unfall"
+    ]
+   }
+  ]
+ },
+ "payback-amex": {
+  "type": "privat",
+  "name": "PAYBACK American Express Karte",
+  "short": "Payback Amex",
+  "issuer": "American Express",
+  "programs": [
+   "payback"
+  ],
+  "fee": "kostenlos",
+  "updated": "2026-11-26",
+  "url": "https://www.americanexpress.com/de-de/amexcited/cards/amex-karten-vergleich-12390",
+  "source": "americanexpress.com",
+  "note": "Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "Keine Jahresgebühr"
+    ]
+   },
+   {
+    "h": "Punkte sammeln",
+    "items": [
+     "1 PAYBACK Punkt je 3 € Umsatz (nicht an Tankstellen)",
+     "Zusätzlich die normalen Partnerpunkte",
+     "Willkommensbonus 4.444 Punkte",
+     "Punkte 1:1 in Miles & More Meilen umwandelbar"
+    ]
+   },
+   {
+    "h": "Versicherungen",
+    "items": [
+     "Käuferschutz"
+    ]
+   }
+  ]
+ },
+ "payback-amex-plus": {
+  "type": "privat",
+  "name": "PAYBACK American Express PLUS",
+  "short": "Payback Amex PLUS",
+  "issuer": "American Express / PAYBACK",
+  "programs": [
+   "payback"
+  ],
+  "fee": "35 € pro Jahr",
+  "updated": "2026-11-26",
+  "url": "https://www.payback.de/info/american-express/max-wird-plus",
+  "source": "payback.de",
+  "note": "Upgrade für Inhaber einer PAYBACK American Express Hauptkarte. Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "35 € pro Jahr, verlängert sich automatisch"
+    ]
+   },
+   {
+    "h": "Punkte sammeln",
+    "items": [
+     "2 Punkte je 3 € Umsatz bis 20.000 € im Jahr, danach 1 je 3 €",
+     "Monatliche Challenge: 250 Extrapunkte ab 3.500 €, 1.000 ab 5.000 € Umsatz"
+    ]
+   },
+   {
+    "h": "Jährliches Paket",
+    "items": [
+     "1.000 Punkte als Online-Shopping-Coupon",
+     "15fach-Coupon für Expedia-Unterkünfte",
+     "10 € MILES-Carsharing-Gutschein",
+     "500 Punkte für den Prämienshop"
+    ]
+   }
+  ]
+ },
+ "mm-blue": {
+  "type": "privat",
+  "name": "Miles & More Credit Card Blue",
+  "short": "M&M Blue",
+  "issuer": "Deutsche Bank",
+  "programs": [
+   "miles-more"
+  ],
+  "fee": "66 € pro Jahr",
+  "updated": "2026-11-26",
+  "url": "https://meilenoptimieren.com/miles-and-more-gold-vs-blue-kreditkarte-vergleich/",
+  "source": "meilenoptimieren.com",
+  "note": "Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "5,50 € pro Monat (66 € im Jahr)",
+     "Fremdwährungsgebühr 1,95 %"
+    ]
+   },
+   {
+    "h": "Meilen sammeln",
+    "items": [
+     "1 Meile je 2 € Umsatz",
+     "Meilen sind sofort vor Verfall geschützt"
+    ]
+   },
+   {
+    "h": "Weitere Vorteile",
+    "items": [
+     "Avis Preferred mit bis zu 25 % Rabatt und 4 Meilen pro Euro"
+    ]
+   }
+  ]
+ },
+ "mm-gold": {
+  "type": "privat",
+  "name": "Miles & More Credit Card Gold",
+  "short": "M&M Gold",
+  "issuer": "Deutsche Bank",
+  "programs": [
+   "miles-more",
+   "marriott-bonvoy"
+  ],
+  "fee": "138 € pro Jahr",
+  "updated": "2026-11-26",
+  "url": "https://meilenoptimieren.com/miles-and-more-gold-vs-blue-kreditkarte-vergleich/",
+  "source": "meilenoptimieren.com",
+  "note": "Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "11,50 € pro Monat (138 € im Jahr)",
+     "Fremdwährungsgebühr 1,95 %"
+    ]
+   },
+   {
+    "h": "Meilen sammeln",
+    "items": [
+     "1 Meile je 2 € Umsatz",
+     "Bis 30.11.2026: 4-fache Meilen außerhalb des EWR (Aktivierung nötig)",
+     "Neukundenbonus bis 30.11.2026: 20.000 Meilen, 40 Points, 4 Lounge-Gutscheine",
+     "Meilen sind sofort vor Verfall geschützt"
+    ]
+   },
+   {
+    "h": "Status",
+    "items": [
+     "Umwandlung in Points (bis 25.000 Meilen pro Jahr)",
+     "Marriott Bonvoy Silver Elite",
+     "Avis Preferred Plus mit bis zu 30 % Rabatt und 5 Meilen pro Euro"
+    ]
+   },
+   {
+    "h": "Versicherungen",
+    "items": [
+     "Reiserücktritt und -abbruch",
+     "Auslandsreisekranken mit Rücktransport",
+     "Mietwagen-Zusatzversicherung",
+     "24-Stunden-Assistance, Telemedizin (Allianz)"
+    ]
+   }
+  ]
+ },
+ "mm-blue-business": {
+  "type": "business",
+  "name": "Miles & More Credit Card Blue Business",
+  "short": "M&M Blue Business",
+  "issuer": "Deutsche Bank",
+  "programs": [
+   "miles-more"
+  ],
+  "fee": "66 € pro Jahr",
+  "updated": "2026-11-26",
+  "url": "https://www.kreditkarte24.de/miles-more/business/",
+  "source": "kreditkarte24.de",
+  "note": "Charge-Karte: Der Saldo wird monatlich komplett abgebucht. Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "5,50 € pro Monat (66 € im Jahr)",
+     "Fremdwährung 1,95 %, Bargeld 2 % (mindestens 5 €)"
+    ]
+   },
+   {
+    "h": "Meilen sammeln",
+    "items": [
+     "1 Meile pro 1 € Umsatz (doppelt so viel wie die Privatkarten)",
+     "Willkommensbonus 1.000 Meilen und 40 Points (Antrag bis 31.12.2026)"
+    ]
+   },
+   {
+    "h": "Versicherungen",
+    "items": [
+     "Keine"
+    ]
+   }
+  ]
+ },
+ "mm-gold-business": {
+  "type": "business",
+  "name": "Miles & More Credit Card Gold Business",
+  "short": "M&M Gold Business",
+  "issuer": "Deutsche Bank",
+  "programs": [
+   "miles-more",
+   "marriott-bonvoy"
+  ],
+  "fee": "138 € pro Jahr",
+  "updated": "2026-11-26",
+  "url": "https://www.kreditkarte24.de/miles-more/business/",
+  "source": "kreditkarte24.de",
+  "note": "Charge-Karte: Der Saldo wird monatlich komplett abgebucht. Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "11,50 € pro Monat (138 € im Jahr)",
+     "Fremdwährung 1,95 %, Bargeld 2 %, die ersten 2 Abhebungen im Ausland pro Jahr ohne Gebühr"
+    ]
+   },
+   {
+    "h": "Meilen sammeln",
+    "items": [
+     "1 Meile pro 1 € Umsatz",
+     "Bis 30.11.2026: 50.000 Meilen, 40 Points und 4 Lounge-Gutscheine für Neukunden",
+     "Bis 30.11.2026: 4 Meilen pro 1 € außerhalb des EWR (Aktivierung nötig)"
+    ]
+   },
+   {
+    "h": "Status",
+    "items": [
+     "Bis zu 25.000 Meilen pro Jahr in Points und Qualifying Points umwandelbar",
+     "Marriott Bonvoy Silver Elite"
+    ]
+   },
+   {
+    "h": "Versicherungen (nur Geschäftsreisen)",
+    "items": [
+     "Auslandsreisekranken, Reiserücktritt und -abbruch",
+     "Reise-Unfall, Mietwagen",
+     "Reise muss mit der Karte bezahlt und geschäftlich veranlasst sein"
+    ]
+   }
+  ]
+ },
+ "eurowings-classic": {
+  "type": "privat",
+  "name": "Eurowings Kreditkarte Classic",
+  "short": "Eurowings Classic",
+  "issuer": "easybank",
+  "programs": [
+   "miles-more"
+  ],
+  "fee": "29 €, 1. Jahr 14,50 €",
+  "updated": "2026-11-26",
+  "url": "https://www.kreditkarte24.de/eurowings/",
+  "source": "kreditkarte24.de",
+  "note": "Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "14,50 € im ersten Jahr, danach 29 €",
+     "Fremdwährung 1,99 %, Abhebungen im Ausland kostenlos",
+     "Abhebungen in Deutschland 4 %"
+    ]
+   },
+   {
+    "h": "Meilen sammeln",
+    "items": [
+     "1 Miles & More Meile je 2 € Umsatz",
+     "Kein Verfallschutz, Meilen gelten 36 Monate"
+    ]
+   },
+   {
+    "h": "Vorteile",
+    "items": [
+     "Security Fast Lane in Berlin, Hamburg, Köln/Bonn, München T1 und Stuttgart",
+     "Sportgepäck kostenlos bei Zahlung mit der Karte",
+     "Reiseversicherungspaket"
+    ]
+   }
+  ]
+ },
+ "eurowings-premium": {
+  "type": "privat",
+  "name": "Eurowings Kreditkarte Premium",
+  "short": "Eurowings Premium",
+  "issuer": "easybank",
+  "programs": [
+   "miles-more"
+  ],
+  "fee": "99 €, 1. Jahr 49,50 €",
+  "updated": "2026-11-26",
+  "url": "https://www.kreditkarte24.de/eurowings/",
+  "source": "kreditkarte24.de",
+  "note": "Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "49,50 € im ersten Jahr, danach 99 €",
+     "Keine Gebühren für Kartenzahlungen im Ausland, Abhebungen im Ausland kostenlos",
+     "Abhebungen in Deutschland 4 %"
+    ]
+   },
+   {
+    "h": "Meilen sammeln",
+    "items": [
+     "1 Miles & More Meile je 2 € Umsatz",
+     "Kein Verfallschutz, Meilen gelten 36 Monate"
+    ]
+   },
+   {
+    "h": "Vorteile bei Eurowings",
+    "items": [
+     "Security Fast Lane an vielen Flughäfen",
+     "Priority Check-in, kostenlose Sitzplatzreservierung",
+     "Freigepäck für Buchungen mit Kind unter 12, Sportgepäck kostenlos"
+    ]
+   },
+   {
+    "h": "Versicherungen",
+    "items": [
+     "Reiserücktritt und Auslandsreisekranken (laut Test nicht umfassend)"
+    ]
+   }
+  ]
+ },
+ "hilton-advanzia": {
+  "type": "privat",
+  "name": "Hilton Honors Kreditkarte (Advanzia Bank)",
+  "short": "Hilton Honors Mastercard",
+  "issuer": "Advanzia Bank",
+  "programs": [
+   "hilton-honors"
+  ],
+  "fee": "72 € pro Jahr",
+  "updated": "2026-11-26",
+  "url": "https://mileguy.de/advanzia-hilton-honors-kreditkarte",
+  "source": "mileguy.de",
+  "note": "Vollen Rechnungsbetrag per Lastschrift begleichen, sonst fallen hohe Zinsen an. Angaben ohne Gewähr.",
+  "sections": [
+   {
+    "h": "Kosten",
+    "items": [
+     "6 € pro Monat (72 € im Jahr)",
+     "Keine Fremdwährungsgebühr",
+     "Bargeld ohne Gebühr, aber Zinsen ab dem Tag der Abhebung",
+     "Teilzahlung mit hohen Zinsen, Advanzia gibt nur eine Karte pro Kunde aus"
+    ]
+   },
+   {
+    "h": "Punkte sammeln",
+    "items": [
+     "1 Hilton Honors Punkt pro Euro",
+     "2 Punkte pro Euro in Hilton-Hotels",
+     "Regulärer Willkommensbonus 6.000 Punkte (die Aktion mit 50.000 Punkten lief bis 05.11.2026)"
+    ]
+   },
+   {
+    "h": "Status",
+    "items": [
+     "Dauerhaft Hilton Honors Gold, solange die Karte besteht",
+     "Gold bringt u. a. Frühstück für 2 Personen (außer USA) und die 5. Prämiennacht gratis",
+     "Diamond schon ab 40 statt 60 Nächten",
+     "Je 5.000 € Umsatz 5 qualifizierende Nächte, bis zu 40 Nächte im Jahr"
+    ]
+   },
+   {
+    "h": "Versicherungen",
+    "items": [
+     "Auslandsreisekranken, Reiserücktritt und -abbruch",
+     "Reisegepäck, Reiseunfall, Haftpflicht, Kaufschutz",
+     "Mindestens 50 % der Reisekosten mit der Karte bezahlt",
+     "Meist 20 % Selbstbehalt, mindestens 100 € pro Person, Einschränkungen für ältere Reisende"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,194 @@
+{
+ "amex-membership-rewards": {
+  "program": "Amex Membership Rewards",
+  "updated": "2026-11-26",
+  "items": [
+   {
+    "kind": "sammeln",
+    "title": "Willkommensbonus Platinum: bis zu 85.000 Punkte",
+    "detail": "40.000 Punkte ab 6.000 € Umsatz, weitere 45.000 ab 10.000 € innerhalb von 6 Monaten. Nur für Neukunden der Karte.",
+    "until": "ohne festes Ende",
+    "url": "https://meilenoptimieren.com/american-express-aktionen/",
+    "source": "meilenoptimieren.com"
+   },
+   {
+    "kind": "sammeln",
+    "title": "Willkommensbonus Gold: bis zu 50.000 Punkte",
+    "detail": "20.000 Punkte ab 3.000 € Umsatz, weitere 30.000 ab 5.000 € in 6 Monaten. Zusatzkarte bringt +4.500 Punkte.",
+    "until": "ohne festes Ende",
+    "url": "https://meilenoptimieren.com/american-express-aktionen/",
+    "source": "meilenoptimieren.com"
+   },
+   {
+    "kind": "sammeln",
+    "title": "Amex Offers in der App prüfen",
+    "detail": "Personalisierte Extrapunkte, aktuell z. B. Müller (500 Punkte ab 30 €) und adidas (1.000 Punkte je 100 €, bis zu 2×). Vor dem Einkauf in der App aktivieren.",
+    "until": "laufend, personalisiert",
+    "url": "https://www.mydealz.de/deals/amex-offers-lokal-bei-muller-30eur-ausgeben-und-500-membership-rewards-kassieren-personalisiert-2879146",
+    "source": "mydealz.de"
+   },
+   {
+    "kind": "sammeln",
+    "title": "Punkteturbo: 1,5 statt 1 Punkt pro Euro",
+    "detail": "Kostenpflichtige Zusatzoption für Karten mit Membership Rewards. Lohnt sich bei hohem Kartenumsatz.",
+    "until": "dauerhaft",
+    "url": "https://www.americanexpress.com/de-de/amexcited/benefits/amex-punkteturbo-12515",
+    "source": "americanexpress.com"
+   },
+   {
+    "kind": "einloesen",
+    "title": "Flying Blue Promo Rewards im November",
+    "detail": "Bis zu 25 % weniger Meilen, z. B. Business nach New York ab 45.000 Meilen. MR wandeln 5:4 zu Flying Blue. Reisezeitraum bis 30.04.2027.",
+    "until": "2026-11-30",
+    "url": "https://reisetopia.de/deals/flying-blue-promo-awards/",
+    "source": "reisetopia.de"
+   },
+   {
+    "kind": "einloesen",
+    "title": "Aktuell kein Transferbonus",
+    "detail": "Der letzte Bonus (30 % zu Marriott Bonvoy) endete am 31.10.2026. Bestwerte meist über Flying Blue, Avios (5:4) oder Hilton (1:1). Zu Miles & More nur über Payback (3:1), selten sinnvoll.",
+    "until": "Stand 26.11.2026",
+    "url": "https://www.meilen-koenig.de/en/blog/amex-transferpartner-deutschland-2026",
+    "source": "meilen-koenig.de"
+   }
+  ]
+ },
+ "hilton-honors": {
+  "program": "Hilton Honors",
+  "updated": "2026-11-26",
+  "items": [
+   {
+    "kind": "sammeln",
+    "title": "More Points to Play: 1.000 Bonuspunkte pro Aufenthalt",
+    "detail": "3.000 Punkte in Luxus-, Lifestyle-, Resort- und All-inclusive-Hotels. Registrierung vor dem Aufenthalt nötig, auch Prämienaufenthalte zählen, kein Limit.",
+    "until": "2026-12-31",
+    "url": "https://onemileatatime.com/deals/hilton-honors-promotion/",
+    "source": "onemileatatime.com"
+   },
+   {
+    "kind": "sammeln",
+    "title": "Cyber-Week-Sale: 2.000 Punkte pro Aufenthalt",
+    "detail": "Bei teilnehmenden Hotels weltweit, laut Bericht bis zu 30 % Rabatt. Aufenthalte bis 02.04.2027. Mit More Points to Play kombinierbar.",
+    "until": "2026-12-01",
+    "url": "https://www.insideflyer.com/posts/hilton-adds-2-000-honors-points-to-cyber-week-sale/",
+    "source": "insideflyer.com"
+   },
+   {
+    "kind": "sammeln",
+    "title": "Amex Membership Rewards 1:1 zu Hilton",
+    "detail": "Punkte lassen sich jederzeit im Verhältnis 1:1 übertragen, mindestens 2.500.",
+    "until": "dauerhaft",
+    "url": "https://www.meilen-koenig.de/en/blog/amex-transferpartner-deutschland-2026",
+    "source": "meilen-koenig.de"
+   },
+   {
+    "kind": "einloesen",
+    "title": "5. Nacht gratis bei Prämienaufenthalten",
+    "detail": "Ab Silber-Status ist bei 5 Nächten mit Punkten jede 5. Nacht kostenlos. Damit sinkt der Punktepreis um 20 %.",
+    "until": "dauerhaft",
+    "url": "https://www.loyaltytip.com/hotel/hilton-honors/hilton-honors-promotions/",
+    "source": "loyaltytip.com"
+   }
+  ]
+ },
+ "miles-more": {
+  "program": "Miles & More",
+  "updated": "2026-11-26",
+  "items": [
+   {
+    "kind": "sammeln",
+    "title": "My Challenge zur Black Week: bis zu 6.100 Meilen",
+    "detail": "Personalisiert in der Miles & More App (Startseite) aktivieren. Größter Posten: 4.500 Meilen ab 1.000 € Amazon-Umsatz über das Miles & More Shopping-Portal.",
+    "until": "2026-12-01",
+    "url": "https://frankfurtflyer.de/miles-more-my-challenge/",
+    "source": "frankfurtflyer.de"
+   },
+   {
+    "kind": "sammeln",
+    "title": "Kreditkarte: 4-fache Meilen außerhalb des EWR",
+    "detail": "Privat 4 Meilen je 2 €, Business 4 je 1 €. Aktivierung nötig, auch Schweiz und UK zählen.",
+    "until": "2026-11-30",
+    "url": "https://meilenoptimieren.com/miles-and-more-aktionen/",
+    "source": "meilenoptimieren.com"
+   },
+   {
+    "kind": "sammeln",
+    "title": "Amazon: bis zu 12 Meilen pro Euro",
+    "detail": "10 Meilen/€ in ausgewählten Kategorien plus 2 Meilen/€ ab 500 € Monatsumsatz, nur über die Miles & More Partnerseite.",
+    "until": "2026-11-30",
+    "url": "https://meilenoptimieren.com/miles-and-more-aktionen/",
+    "source": "meilenoptimieren.com"
+   },
+   {
+    "kind": "sammeln",
+    "title": "Sixt: bis zu 8 Meilen pro Euro",
+    "detail": "Im November buchen, Anmietung 01.11.2026 bis 31.01.2027, 2 bis 27 Tage.",
+    "until": "2026-11-30",
+    "url": "https://meilenoptimieren.com/miles-and-more-aktionen/",
+    "source": "meilenoptimieren.com"
+   },
+   {
+    "kind": "sammeln",
+    "title": "Avis: bis zu 8.000 Bonusmeilen",
+    "detail": "Für Inhaber der Miles & More Kreditkarte, Anmietung bis 28.02.2027, ab Gruppe C, 4.000 bis 8.000 Meilen je nach Dauer.",
+    "until": "2026-12-31",
+    "url": "https://reisetopia.de/deals/miles-more-promo-avis/",
+    "source": "reisetopia.de"
+   },
+   {
+    "kind": "sammeln",
+    "title": "IHG Hotels: dreifache Meilen",
+    "detail": "Meist 6 Meilen pro USD. Registrierung, Direktbuchung und Miles & More als Sammelpräferenz vor dem Check-in nötig.",
+    "until": "2026-12-31",
+    "url": "https://meilenoptimieren.com/miles-and-more-aktionen/",
+    "source": "meilenoptimieren.com"
+   },
+   {
+    "kind": "sammeln",
+    "title": "WELT AM SONNTAG: 24.000 Meilen",
+    "detail": "Abo für rund 312 €, Buchung bis 31.12.2026.",
+    "until": "2026-12-31",
+    "url": "https://meilenoptimieren.com/miles-and-more-aktionen/",
+    "source": "meilenoptimieren.com"
+   },
+   {
+    "kind": "einloesen",
+    "title": "Meilenschnäppchen Business Class",
+    "detail": "Eurowings nach Dschidda oder Kairo 43.000 statt 75.000 Meilen. Ab Belgien (Brussels) nach New York 61.000, ab Polen (LOT) nach Tokio 83.000. Nicht stornierbar. Für Lufthansa, SWISS und Austrian gibt es keine Schnäppchen mehr.",
+    "until": "Stand 02.11.2026",
+    "url": "https://www.meilenjunkies.de/meilenschnaeppchen/",
+    "source": "meilenjunkies.de"
+   },
+   {
+    "kind": "einloesen",
+    "title": "Payback zu Miles & More: aktuell kein Bonus",
+    "detail": "Der letzte Transferbonus (10 %) lief im Juli 2026, davor 25 % im Januar. Im Januar lohnt es sich oft zu warten.",
+    "until": "Stand 26.11.2026",
+    "url": "https://meilenoptimieren.com/transferbonus-payback-miles-and-more/",
+    "source": "meilenoptimieren.com"
+   }
+  ]
+ },
+ "payback": {
+  "program": "Payback",
+  "updated": "2026-11-26",
+  "items": [
+   {
+    "kind": "sammeln",
+    "title": "Coupons in der Payback-App aktivieren",
+    "detail": "Die größten Hebel sind Mehrfach-Punkte-Coupons bei dm, REWE, Aral und Online-Shops. Vor jedem Einkauf aktivieren.",
+    "until": "laufend",
+    "url": "https://meilen-meister.de/posts/die-besten-payback-aktionen-und-angebote-fuer-meilensammler-bei-miles-and-more",
+    "source": "meilen-meister.de"
+   },
+   {
+    "kind": "einloesen",
+    "title": "Umwandlung zu Miles & More: aktuell kein Bonus",
+    "detail": "Regulär 1 Punkt = 1 Meile. Letzte Boni: 25 % im Januar 2026 und 10 % im Juli 2026 (ab 4.000 Punkten). Wer nicht dringend Meilen braucht, wartet auf die nächste Aktion.",
+    "until": "Stand 26.11.2026",
+    "url": "https://meilenoptimieren.com/transferbonus-payback-miles-and-more/",
+    "source": "meilenoptimieren.com"
+   }
+  ]
+ }
+}

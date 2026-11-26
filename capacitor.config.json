@@ -1,0 +1,13 @@
+{
+  "appId": "de.rmitonline.punktekonto",
+  "appName": "Punkte Konto",
+  "webDir": "web",
+  "server": {
+    "url": "https://OWNER.github.io/REPO/",
+    "androidScheme": "https",
+    "cleartext": false
+  },
+  "android": {
+    "backgroundColor": "#0c0a0b"
+  }
+}

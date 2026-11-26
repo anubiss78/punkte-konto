@@ -104,6 +104,7 @@ textarea{min-height:120px;font-size:13px;font-family:ui-monospace,monospace}
 .kb .f{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin-top:10px;font-size:13px;color:var(--mute)}
 .kb a{color:#ff6b70}
 .cpick{display:grid;gap:6px}.cpick button{display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:left;border-color:var(--line);background:rgba(255,255,255,.04);padding:8px 12px;min-height:48px}.cpick b{font-size:15px}.cpick span{font-size:13px;color:var(--mute);white-space:nowrap}
+.paste{margin:12px 0 18px;padding:14px;border:1px solid var(--acc);border-radius:12px;background:rgba(200,20,30,.1)}.paste textarea{min-height:64px;margin-top:8px}
 .toast{position:fixed;top:16px;left:50%;transform:translateX(-50%);background:var(--acc);color:#fff;padding:10px 16px;border-radius:12px;font-size:14px;z-index:20}
 .toast[hidden]{display:none}
 </style>
@@ -121,6 +122,7 @@ textarea{min-height:120px;font-size:13px;font-family:ui-monospace,monospace}
   <div id="list" class="cards"></div>
   <div id="empty" class="empty" hidden>
     <h2>Noch keine Programme</h2>
+    <div class="paste"><b>Daten aus Claude übernehmen</b><div class="sub">In Claude auf „Zur Handy-App übertragen“ tippen, dann hier lange drücken und „Einfügen“.</div><textarea id="pasteIn" placeholder="Hier lange drücken und einfügen"></textarea></div>
     <div class="sub">Tippe auf ein Programm, um es anzulegen, und trag deinen aktuellen Stand ein.</div>
     <div class="chips" id="chips"></div>
   </div>
@@ -404,7 +406,17 @@ document.addEventListener("keydown",e=>{const t=e.target.closest&&e.target.close
 document.addEventListener("toggle",e=>{const d=e.target;if(d&&d.dataset&&d.dataset.kc){d.open?openKc.add(d.dataset.kc):openKc.delete(d.dataset.kc)}},true);
 /* Sicherung */
 $("copyBtn").onclick=async()=>{const txt=JSON.stringify(progs);$("io").value=txt;try{await navigator.clipboard.writeText(txt);toast("In die Zwischenablage kopiert")}catch(e){$("io").select();toast("Text markiert, bitte manuell kopieren")}};
-$("importBtn").onclick=async()=>{
+async function importText(t,silent){
+  t=String(t||"").trim().replace(/^PUNKTEKONTO:/,"");let o;try{o=JSON.parse(t)}catch(e){if(!silent)toast("Ungültiger Text");return false}
+  if(!o||typeof o!=="object"||Array.isArray(o)){if(!silent)toast("Ungültiger Text");return false}
+  const n={};for(const [id,v] of Object.entries(o)){if(/^[\w-]{1,60}$/.test(id)&&v&&typeof v==="object")n[id]=clean(v)}
+  if(!Object.keys(n).length){if(!silent)toast("Keine Programme gefunden");return false}
+  progs=n;await store.save();render();toast(Object.keys(n).length+" Programme übernommen");return true;
+}
+$("pasteIn").addEventListener("input",e=>{importText(e.target.value).then(ok=>{if(ok)e.target.value=""})});
+async function tryClipboard(){if(Object.keys(progs).length)return;try{const t=await navigator.clipboard.readText();if(t&&t.startsWith("PUNKTEKONTO:"))importText(t,true)}catch(e){}}
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)tryClipboard()});
+$("importBtn").onclick=async()=>{if($("io").value.trim().startsWith("PUNKTEKONTO:")){importText($("io").value);return}
   let o;try{o=JSON.parse($("io").value)}catch(e){toast("Ungültiger Sicherungstext");return}
   if(!o||typeof o!=="object"){toast("Ungültiger Sicherungstext");return}
   for(const id of Object.keys(progs))if(!(id in o)){delete progs[id];try{await store.del(id)}catch(e){}}
@@ -425,7 +437,7 @@ async function askTips(id,btn){
   }finally{btn.disabled=false}
 }
 render();
-initStore();
+initStore().then(tryClipboard);
 
 }
 </script>

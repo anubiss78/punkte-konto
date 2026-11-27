@@ -2,7 +2,7 @@ name: Android-App bauen
 on:
   workflow_dispatch:
   push:
-    paths: ["capacitor.config.json", "package.json", "assets/**", ".github/workflows/android.yml"]
+    paths: ["capacitor.config.json", "package.json", "assets/**", "signing/**", ".github/workflows/android.yml"]
 permissions:
   contents: write
 jobs:
@@ -25,6 +25,8 @@ jobs:
       - run: npx cap add android
       - run: npx capacitor-assets generate --android
       - run: npx cap sync android
+      - name: Feste Signatur verwenden (damit Updates über die alte App installiert werden können)
+        run: mkdir -p ~/.android && cp signing/app.keystore ~/.android/debug.keystore
       - name: APK bauen
         working-directory: android
         run: ./gradlew assembleDebug

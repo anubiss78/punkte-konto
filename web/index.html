@@ -103,6 +103,9 @@ textarea{min-height:120px;font-size:13px;font-family:ui-monospace,monospace}
 .kb ul{margin:0;padding-left:18px;color:var(--mute)}.kb li{margin:2px 0}
 .kb .f{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin-top:10px;font-size:13px;color:var(--mute)}
 .kb a{color:#ff6b70}
+.kw{margin-bottom:8px}.kw .kc{margin-bottom:0}
+.ka{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;margin-top:6px}.ka button{min-height:38px;padding:0 14px;font-size:14px;border-color:var(--line)}.ka .rm{color:#ff6b70}.ka .rm.sure{background:var(--acc);color:#fff;border-color:var(--acc)}
+.swh{font-size:14px;color:var(--mute);margin:10px 0 0}
 .cpick{display:grid;gap:6px}.cpick button{display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:left;border-color:var(--line);background:rgba(255,255,255,.04);padding:8px 12px;min-height:48px}.cpick b{font-size:15px}.cpick span{font-size:13px;color:var(--mute);white-space:nowrap}
 .paste{margin:12px 0 18px;padding:14px;border:1px solid var(--acc);border-radius:12px;background:rgba(200,20,30,.1)}.paste textarea{min-height:64px;margin-top:8px}
 .toast{position:fixed;top:16px;left:50%;transform:translateX(-50%);background:var(--acc);color:#fff;padding:10px 16px;border-radius:12px;font-size:14px;z-index:20}
@@ -206,7 +209,7 @@ const okey=n=>String(n).toLowerCase().replace(/&/g," ").replace(/ä/g,"ae").repl
 const safeUrl=u=>typeof u==="string"&&/^https:\/\//.test(u)?u:"";
 const okColor=c=>/^#[0-9a-f]{6}$/i.test(c)?c:"#55524a";
 
-let progs={};let offers={};let cardCat={};const openKc=new Set();const pickOpen=new Set();let sampleFn=null;let aiOut={};let store=null;let open=new Set();let editing=null;let mode="full";
+let progs={};let offers={};let cardCat={};const openKc=new Set();const pickOpen=new Set();const swapFrom={};let rmArmed=null;let rmTimer=null;let sampleFn=null;let aiOut={};let store=null;let open=new Set();let editing=null;let mode="full";
 const LS="punkte-konto-v1";
 
 function toast(t){const e=$("toast");e.textContent=t;e.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>e.hidden=true,2400)}
@@ -274,21 +277,23 @@ function offersHtml(id,p){
 function cardsHtml(id,p){
   const k=okey(p.name);
   let h='<div class="cc"><h3>Kreditkarten</h3>';
-  const mine=p.cards.filter(c=>cardCat[c]);
-  h+=mine.map(c=>{const x=cardCat[c];const u=safeUrl(x.url);
-    const secs=Array.isArray(x.sections)?x.sections:[];
-    const kk=id+"|"+c;return`<details class="kc" data-kc="${esc(kk)}" ${openKc.has(kk)?"open":""}><summary><b>${esc(x.name)}</b><span>${esc(x.fee||"")}</span></summary><div class="kb">${secs.map(sc=>`<h5>${esc(sc&&sc.h)}</h5><ul>${(Array.isArray(sc&&sc.items)?sc.items:[]).map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`).join("")}<div class="f">${x.updated?`<span>Stand ${esc(fmtD(String(x.updated)))}</span>`:""}${u?`<a href="${esc(u)}" target="_blank" rel="noopener">Quelle: ${esc(x.source||"Link")}</a>`:""}<span style="flex:1"></span><button type="button" class="upd" data-rmc="${esc(id)}|${esc(c)}">Entfernen</button></div>${x.note?`<div class="meta" style="margin-top:6px">${esc(x.note)}</div>`:""}</div></details>`}).join("");
+  const loaded=Object.keys(cardCat).length>0;
+  const mine=loaded?p.cards:[];
   const fit=Object.entries(cardCat).filter(([c,x])=>!p.cards.includes(c)&&Array.isArray(x.programs)&&x.programs.includes(k));
-  if(!Object.keys(cardCat).length){h+='<div class="meta">Die Kartenliste wird geladen oder ist gerade nicht erreichbar.</div>'}
+  h+=mine.map(c=>{const x=cardCat[c]||{name:c.replace(/[-_]+/g," "),note:"Diese Karte ist nicht mehr in der Kartenliste."};const u=safeUrl(x.url);
+    const secs=Array.isArray(x.sections)?x.sections:[];
+    const kk=id+"|"+c;return`<div class="kw"><details class="kc" data-kc="${esc(kk)}" ${openKc.has(kk)?"open":""}><summary><b>${esc(x.name)}</b><span>${esc(x.fee||"")}</span></summary><div class="kb">${secs.map(sc=>`<h5>${esc(sc&&sc.h)}</h5><ul>${(Array.isArray(sc&&sc.items)?sc.items:[]).map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`).join("")}<div class="f">${x.updated?`<span>Stand ${esc(fmtD(String(x.updated)))}</span>`:""}${u?`<a href="${esc(u)}" target="_blank" rel="noopener">Quelle: ${esc(x.source||"Link")}</a>`:""}</div>${x.note?`<div class="meta" style="margin-top:6px">${esc(x.note)}</div>`:""}</div></details><div class="ka">${fit.length?`<button type="button" data-swc="${esc(kk)}">Karte wechseln</button>`:""}<button type="button" class="rm${rmArmed===kk?" sure":""}" data-rmc="${esc(kk)}">${rmArmed===kk?"Wirklich entfernen?":"Entfernen"}</button></div></div>`}).join("");
+  if(!loaded){h+='<div class="meta">Die Kartenliste wird geladen oder ist gerade nicht erreichbar.</div>'}
   else if(!fit.length&&!mine.length){h+=`<div class="meta">Für ${esc(p.name)} ist am deutschen Markt keine passende Kreditkarte hinterlegt.</div>`}
   else if(fit.length){
     if(!mine.length)h+='<div class="meta">Noch keine Karte hinterlegt.</div>';
     if(!pickOpen.has(id))h+=`<button type="button" class="upd" data-pickc="${esc(id)}">+ Kreditkarte hinzufügen</button>`;
     else{
+      if(swapFrom[id]&&p.cards.includes(swapFrom[id]))h+=`<div class="swh">Neue Karte anstelle von <b>${esc((cardCat[swapFrom[id]]||{}).name||swapFrom[id])}</b> wählen:</div>`;
       const grp=t=>fit.filter(([,x])=>(x.type==="business"?"business":"privat")===t).sort((a,b)=>String(a[1].name).localeCompare(String(b[1].name)));
       for(const [t,l] of [["privat","Privatkarten"],["business","Businesskarten"]]){const g=grp(t);if(!g.length)continue;
         h+=`<h5 class="gh">${l}</h5><div class="cpick">${g.map(([c,x])=>`<button type="button" data-addc="${esc(id)}|${esc(c)}"><b>${esc(x.name)}</b><span>${esc(x.fee||"")}</span></button>`).join("")}</div>`;}
-      h+=`<button type="button" class="upd" data-pickc="${esc(id)}" style="margin-top:8px">Schließen</button>`;
+      h+=`<button type="button" class="upd" data-pickc="${esc(id)}" style="margin-top:8px">${swapFrom[id]?"Abbrechen":"Schließen"}</button>`;
     }
   }
   return h+'</div>';
@@ -391,10 +396,14 @@ $("delBtn").onclick=async()=>{
 };
 $("addBtn").onclick=()=>{const have=new Set(Object.values(progs).map(p=>p.name));openSheet("full",null,PRESETS.find(p=>!have.has(p.name))||PRESETS[PRESETS.length-1])};
 document.addEventListener("click",e=>{
-  const t=e.target.closest("[data-tog],[data-upd],[data-edit],[data-pre],[data-ai],[data-addc],[data-rmc],[data-pickc]");if(!t)return;
-  if(t.dataset.pickc){const id=t.dataset.pickc;pickOpen.has(id)?pickOpen.delete(id):pickOpen.add(id);render();return}
-  if(t.dataset.addc){const [id,v]=t.dataset.addc.split("|");if(!v||!progs[id])return;pickOpen.delete(id);const p=clean(JSON.parse(JSON.stringify(progs[id])));if(!p.cards.includes(v))p.cards.push(v);progs[id]=p;render();store.save(id,p).then(()=>toast("Karte hinzugefügt"),()=>toast("Speichern fehlgeschlagen"));return}
-  if(t.dataset.rmc){const [id,c]=t.dataset.rmc.split("|");if(!progs[id])return;const p=clean(JSON.parse(JSON.stringify(progs[id])));p.cards=p.cards.filter(x=>x!==c);progs[id]=p;render();store.save(id,p).then(()=>toast("Karte entfernt"),()=>toast("Speichern fehlgeschlagen"));return}
+  const t=e.target.closest("[data-tog],[data-upd],[data-edit],[data-pre],[data-ai],[data-addc],[data-rmc],[data-pickc],[data-swc]");
+  if(rmArmed&&!(t&&t.dataset.rmc===rmArmed)){rmArmed=null;clearTimeout(rmTimer);if(!t){render();return}}
+  if(!t)return;
+  if(t.dataset.pickc){const id=t.dataset.pickc;delete swapFrom[id];pickOpen.has(id)?pickOpen.delete(id):pickOpen.add(id);render();return}
+  if(t.dataset.swc){const i=t.dataset.swc.indexOf("|");const id=t.dataset.swc.slice(0,i),c=t.dataset.swc.slice(i+1);if(!progs[id])return;swapFrom[id]=c;pickOpen.add(id);render();return}
+  if(t.dataset.addc){const [id,v]=t.dataset.addc.split("|");if(!v||!progs[id])return;pickOpen.delete(id);const p=clean(JSON.parse(JSON.stringify(progs[id])));const old=swapFrom[id];delete swapFrom[id];const oi=old?p.cards.indexOf(old):-1;if(p.cards.includes(v)){}else if(oi>=0)p.cards[oi]=v;else p.cards.push(v);progs[id]=p;render();store.save(id,p).then(()=>toast(oi>=0?"Karte gewechselt":"Karte hinzugefügt"),()=>toast("Speichern fehlgeschlagen"));return}
+  if(t.dataset.rmc){if(rmArmed!==t.dataset.rmc){rmArmed=t.dataset.rmc;clearTimeout(rmTimer);rmTimer=setTimeout(()=>{rmArmed=null;render()},5000);render();return}
+    rmArmed=null;clearTimeout(rmTimer);const i=t.dataset.rmc.indexOf("|");const id=t.dataset.rmc.slice(0,i),c=t.dataset.rmc.slice(i+1);if(!progs[id])return;if(swapFrom[id]===c){delete swapFrom[id];pickOpen.delete(id)}const p=clean(JSON.parse(JSON.stringify(progs[id])));p.cards=p.cards.filter(x=>x!==c);progs[id]=p;render();store.save(id,p).then(()=>toast("Karte entfernt"),()=>toast("Speichern fehlgeschlagen"));return}
   if(t.dataset.ai)return askTips(t.dataset.ai,t);
   if(t.dataset.pre!=null)return openSheet("full",null,PRESETS[+t.dataset.pre]);
   if(t.dataset.upd)return openSheet("quick",t.dataset.upd);
